@@ -1,0 +1,149 @@
+html,body{
+	height: 100%;
+}
+html{
+		font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+}
+.full{
+	width: 100%;
+	height: 100%;
+}
+#loginBox{
+	.full;
+	#login{
+		-webkit-perspective: 800px;
+		.full;
+		background-color: #009DAE;
+		position: relative;
+		#title{
+			-webkit-transform-style : preserve-3d;
+			@w : 2.55rem;
+			width: @w;
+			height: 0.81rem;
+			position: absolute;
+			top: 7%;
+			left: 50%;
+			margin-left: -0.5 * @w;
+			overflow: hidden;
+			.commonTitle(@w,@h){
+				width:@w;
+				height: @h;
+				position: absolute;
+			}
+			.xiyouTitle{
+				.commonTitle(2.16rem, 0.54rem);
+				background: url(../img/score.png);
+				background-size: 100% 100%;
+				margin-top: 0.12rem;
+				transform: rotateY(90deg);
+				left: 50%;
+				margin-left: -1.08rem;
+				transition: all 0.8s;
+				-webkit-transition: all 0.8s;
+			}
+			.middleTitle{
+				.commonTitle(0.15rem, 0.81rem);
+				background : url(../img/icon.png);
+				background-size: 100% 100%;
+				margin: 0 0.12rem 0 0.12rem;
+				left: 50%;
+				margin-left: -0.075rem;
+				top: -0.81rem;
+				transition: all 0.5s;
+				-webkit-transition: all 0.5s;
+			}
+		}
+	}
+}
+#inputMainBox{
+	width: 80%;
+	position: absolute;
+	left : 50%;
+	margin-left: -40%;
+	top: 26%;
+	#inputBox{
+		width: 100%;
+		height: 0.93rem;
+		>div{
+			width : 100%;
+			height : 50%;
+			font-size: 0.16rem;
+			input{
+				.full;
+				text-indent: 0.1rem;
+				border: 0;
+				color: #A0A2AF;
+			}
+			::-webkit-input-placeholder{
+				color: #A0A2AF;
+			}
+			input:focus{
+				outline: none;
+			}
+		}
+		>div:nth-child(1){
+			margin-bottom: 1px;
+		}
+	}
+	#remember{
+		width: 100%;
+		height: 0.6rem;
+		position: relative;
+		.remBox{
+			height: 0.23rem;
+			position:absolute;
+			right: 0;
+			top: 0.2rem;
+			>div{
+				float: left;
+			}
+			.rememberPic{
+				width: 0.23rem;
+				height: 0.23rem;
+				img{
+					width:100%;
+					height: 100%;
+					display: block;
+				}
+				margin-right: 0.08rem;
+			}
+			.rememberText{
+				height: 0.23rem;
+				line-height: 0.23rem;
+				color: #ffffff;
+				font-weight: bold;
+				font-size: 0.16rem;
+				letter-spacing: 2px;
+			}			
+		}
+
+	}
+	.commonButton{
+		letter-spacing: 2px;
+		width : 100%;
+		height : 0.42rem;
+		text-align: center;
+		line-height: 0.42rem;
+		font-size: 0.16rem;
+		margin-top: 0.2rem;
+		border-radius: 2px;
+	}
+	#loginButton,#libButton{
+		.commonButton;
+	}
+	#loginButton{
+		color:#ffffff;
+		background-color: #18B3C5;
+	}
+	#libButton{
+		color: #009EAC;
+		background-color: #2A4A55;
+	}
+	p{
+		text-align: center;
+		color: #ffffff;
+		display: block;
+		font-size: 0.11rem;
+		margin-top: 0.3rem;
+	}
+}

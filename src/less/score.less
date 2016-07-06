@@ -1,0 +1,346 @@
+html{
+		font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+}
+
+html,body{
+	// width:100%;
+	height: 100%;
+}
+// html{
+// 		width: 100%;
+// 		height: 100%;
+// 		background: url(../img/back4.png) fixed;
+// 		background-size: 100% 100%;	
+// }
+#blueBack{
+	width: 100%;
+	height: 2rem;
+	position: relative;
+	// #shadowBack{
+	// 	width: 100%;
+	// 	height: 100%;
+	// 	position: absolute;
+	// 	background: url(../img/back.png);
+	// 	background-size: 100% 100%;
+	// 	top: 0;
+	// 	z-index: -1;
+	// }
+	#scoreTitle{
+		width: 100%;
+		height: 0.5rem;
+		background-color: #3388CC;
+		position: fixed;
+		border-bottom: 1px solid #607E98;
+		top : 0;
+		z-index: 999999999;
+	}
+	.commonImg{
+		width: 0.4rem;
+		height: 0.4rem;			
+		background-size: 100% 100%;	
+	}
+	#backLogin{
+		background: url(../img/back_index.png);
+		.commonImg;
+		position: absolute;
+		left: 2%;
+		top: 50%;
+		margin-top: -0.2rem;
+	}
+	#titleBox{
+		position: relative;
+		top: 0.05rem;
+		width: 50%;
+		left: 32%;
+		#xiyouLogo{
+			background: url(../img/xiyouLogo.png);
+			.commonImg;
+			float: left;
+		}
+		>div:nth-child(2){
+			// padding-left: 0.1rem;
+			text-indent: 0.1rem;
+			letter-spacing: 2px;
+			height : 0.4rem;
+			line-height: 0.4rem;
+			color: #ffffff;
+			font-weight: bold;
+			font-size: 0.15rem;
+		}
+	}
+}
+#studentData{
+	width: 100%;
+	height : 1.4rem;
+	background-color: #18B3C5;
+	position: relative;
+	#inCircle{
+		@outW : 0.5rem;
+		position: absolute;
+		width: @outW;
+		height: @outW;
+		top: 0.2rem;
+		left: 0.3rem;
+		border-radius: 50%;
+		background-color: #000;
+		img{
+			width: 100%;
+			height: 100%;
+			border-radius: 50%;
+		}
+	}
+
+	#studentText{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		>div:nth-child(1){
+			width: 1rem;
+			text-align: center;
+			font-size: 0.15rem;
+			color: #ffffff;
+			letter-spacing: 1px;
+			position: absolute;
+			left: 0.05rem;
+			top: 0.78rem;
+		}
+		>div:nth-child(2){
+			width: 100%;
+			height: 0.3rem;
+			background-color: #009DAE;
+			position: absolute;
+			bottom: 0;
+			div{
+				height: 100%;
+				line-height: 0.3rem;
+				color: #AFE0E7;
+				font-size: 0.14rem;
+				float: left;
+				margin-left: 10%;
+			}
+		}
+	}
+}
+#chooseBox{
+	width: 100%;
+	height: 2rem;
+	top: 0;
+	position: absolute;
+	overflow: hidden;
+	#selectBox{
+		height : 0.6rem;
+		width: 100%;
+		background-color: #EFEFEF;
+		position: absolute;
+		bottom: 0;
+		select{
+			width : 80%;
+			height: 0.35rem;
+			position: absolute;
+			left: 50%;
+			margin-left: -40%;
+			top: 50%;
+			margin-top: -0.175rem;
+			font-size: 0.14rem;
+			font-weight: bold;
+			letter-spacing: 2px;
+			border-radius: 5px;
+			text-indent: 0.1rem;
+			border:1px solid #cccccc;
+			option{
+				text-indent: 0.1rem;
+				// width: 60%;
+			}
+		}
+		select:focus{
+			outline: none;
+		}
+	}
+	#chooseButtonBox{
+		width: 70%;
+		position: absolute;
+		top: 0.25rem;
+		right: 0;
+		.picButton{
+			float: left;
+			width: 30%;
+			height: 0.5rem;
+			position: relative;
+			// margin-left: 5%;
+			>div:nth-child(1){
+				width: 0.42rem;
+				height: 0.43rem;
+				position: absolute;
+				left: 50%;
+				margin-left: -0.21rem;
+				height: 80%;
+				img{
+					width: 100%;
+					height: 100%;
+				}
+			}
+			>div:nth-child(2){
+				width: 100%;
+				height: 20%;
+				// margin-top: 20%;
+				position: absolute;
+				bottom: -0.2rem;
+				text-align: center;
+				line-height: 0.1rem;
+				font-size: 0.14rem;
+				color: #ffffff;
+			}		
+		}
+		.picButton:nth-child(1){
+			margin-left: 3%;
+		}
+	}
+}
+#scoreItem{
+	width: 100%;
+	position: relative;
+	#noData{
+		width: 1.8rem;
+		height: 1.8rem;
+		background : url(../img/404.png);
+		background-size: 100% 100%;
+		position:absolute;
+		left: 50%;
+		margin-left: -0.9rem;
+		top: 0.5rem;
+	}
+	.oneScore{
+		width: 100%;
+		height: 1.1rem;
+		background-color: #10A1D0;
+		.scoreText{
+			>div{
+				
+			}
+			padding-top: 0.05rem;
+			.name{
+				color: #000000;
+				// letter-spacing: 2px;
+				position: relative;
+				height: 0.35rem;
+				margin-top: 0.1rem;
+				div{
+					font-size: 0.12rem;
+					display: inline-block;
+					height: 100%;
+					line-height: 0.35rem;
+				}
+				div:nth-child(1){
+					font-weight: bold;
+					font-size: 0.19rem;
+					margin-left: 10%;
+				}
+				div:nth-child(2){
+					font-size: 0.15rem;
+					position: absolute;
+					right: 0.3rem;
+				}
+			}
+			.markBox{
+				padding-top: 0.03rem;
+				overflow: hidden;
+				div{
+					float: left;
+					// font-weight: bold;
+					font-size: 0.14rem;
+					color: #000000;
+					margin-left: 10%;
+				}
+			}
+		}
+		table{
+				color:#000000;
+				font-size: 0.15rem;		
+				margin-left: 10%;
+				padding-top: 0.02rem;	
+				display: block;
+				tr{
+					display: block;
+				}
+				tr:nth-child(1){
+					padding-top: 0.05rem;
+				}
+				tr:nth-child(2){
+					padding-top: 0.03rem;
+				}
+				td{
+					padding-right: 0.13rem;
+				}
+		}
+		.bottomText{
+			overflow: hidden;
+			>div{
+				padding-top: 0.02rem;
+				// font-weight: bold;
+				float: left;
+				color:#000000;
+				font-size: 0.14rem;
+				margin-left: 10%;
+			}
+		}
+	}
+}
+#mainBox{
+	position: relative;
+	.bigButtonBox{
+		position:fixed;
+		bottom: 0.4rem;
+		overflow: hidden;
+		.commonWH{
+			@a : 0.65rem;
+			width: @a;
+			height: @a;
+			float: left;
+			margin-left: 0.15rem;
+		}
+		.backButton{
+			.commonWH;
+			background: url(../img/back.png);
+			background-size: 100% 100%;
+		}
+		.flushButton{
+			.commonWH;
+			background: url(../img/barimage.png);
+			background-size: 100% 100%;
+			.rotateCircle{
+				width: 100%;
+				height: 100%;
+				background: url(../img/reload1.png);
+				background-size: 100% 100%;
+				transition: 1.5s;
+				transform: rotate(0deg);
+			}			
+		}
+	}
+	.flushText{
+		position: fixed;
+		bottom: 1.2rem;
+		left : 0.7rem;
+		.textBox{
+			width: 2.5rem;
+			height: 0.65rem;
+			font-size: 0.14rem;
+			color:#ffffff;
+			background-color: #363636;
+			border-radius: 0.13rem;
+			text-align: center;
+			display: table-cell;
+			vertical-align: middle;
+		}
+		.littleS{
+			width: 0.2rem;
+			height: 0.2rem;
+			background: url(../img/san2.png);
+			background-size: 100% 100%;
+			position: absolute;
+			bottom: -0.13rem;
+			left: 0.5rem;
+		}
+	}
+}
